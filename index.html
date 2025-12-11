@@ -1,0 +1,687 @@
+<!doctype html>
+<html lang="es-MX">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- SEO Meta Tags -->
+  <title>EmpresasMX - Directorio Nacional de Empresas Mexicanas | Todas las Industrias</title>
+  <meta name="description" content="Encuentra las mejores empresas mexicanas. Directorio completo con reseñas verificadas, contacto directo y empresas de todas las industrias en México.">
+  <meta name="keywords" content="empresas méxico, directorio empresas, negocios méxico, servicios méxico, reseñas empresas">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="EmpresasMX - Directorio Nacional de Empresas Mexicanas">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://empresasmx.com">
+  <meta property="og:image" content="https://empresasmx.com/og-image.jpg">
+  <meta property="og:description" content="Encuentra las mejores empresas mexicanas con reseñas verificadas y contacto directo.">
+
+  <!-- Favicons -->
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <!-- Google Fonts - Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#006847">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="/" class="logo">Empresas<span>MX</span></a>
+
+      <nav class="nav">
+        <a href="#buscar">Buscar</a>
+        <a href="#para-empresas">Para Empresas</a>
+        <a href="#blog">Blog</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="#registrar" class="btn btn-primary">Registrar Empresa</a>
+        <button class="mobile-menu-btn" aria-label="Menú">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="container">
+      <h1>Encuentra las Mejores Empresas en México</h1>
+      <p>Directorio completo con reseñas verificadas de empresas mexicanas de confianza</p>
+
+      <!-- Search Box -->
+      <div class="search-box">
+        <form class="search-form" action="/buscar" method="GET">
+          <input
+            type="text"
+            name="q"
+            class="search-input"
+            placeholder="¿Qué servicio buscas? (ej: Marketing, Eventos, Construcción...)"
+            aria-label="Buscar empresas"
+          >
+          <select name="estado" class="search-select" aria-label="Seleccionar estado">
+            <option value="">Todo México</option>
+            <option value="cdmx">Ciudad de México</option>
+            <option value="jalisco">Jalisco</option>
+            <option value="nuevo-leon">Nuevo León</option>
+            <option value="puebla">Puebla</option>
+            <option value="queretaro">Querétaro</option>
+            <option value="guanajuato">Guanajuato</option>
+            <option value="yucatan">Yucatán</option>
+            <option value="quintana-roo">Quintana Roo</option>
+          </select>
+          <button type="submit" class="btn btn-accent search-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 8px;">
+              <circle cx="11" cy="11" r="8"></circle>
+              <path d="m21 21-4.35-4.35"></path>
+            </svg>
+            Buscar
+          </button>
+        </form>
+      </div>
+
+      <!-- Quick Categories -->
+      <div class="quick-categories">
+        <a href="eventos.html" class="quick-category">Eventos</a>
+        <a href="/tecnologia" class="quick-category">Tecnología</a>
+        <a href="/construccion" class="quick-category">Construcción</a>
+        <a href="/marketing" class="quick-category">Marketing</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATEGORIES SECTION -->
+  <section class="section" id="categorias">
+    <div class="container">
+      <div class="section-title">
+        <h2>Explora por Categoría</h2>
+        <p>Encuentra empresas en la industria que necesitas</p>
+      </div>
+
+      <div class="categories-grid">
+        <!-- Category 1: Eventos -->
+        <a href="eventos.html" class="card category-card">
+          <div class="icon-wrapper">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="3" y="6" width="18" height="15" rx="2"></rect>
+              <path d="M3 10h18"></path>
+              <path d="M8 3v4"></path>
+              <path d="M16 3v4"></path>
+            </svg>
+          </div>
+          <h3>Eventos</h3>
+          <p class="category-count">1,234 empresas</p>
+        </a>
+
+        <!-- Category 2: Tecnología -->
+        <a href="/tecnologia" class="card category-card">
+          <div class="icon-wrapper">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="2" y="3" width="20" height="14" rx="2"></rect>
+              <path d="M8 21h8"></path>
+              <path d="M12 17v4"></path>
+            </svg>
+          </div>
+          <h3>Tecnología</h3>
+          <p class="category-count">856 empresas</p>
+        </a>
+
+        <!-- Category 3: Construcción -->
+        <a href="/construccion" class="card category-card">
+          <div class="icon-wrapper">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3 21h18"></path>
+              <path d="M9 8l1 0"></path>
+              <path d="M9 12l1 0"></path>
+              <path d="M9 16l1 0"></path>
+              <path d="M14 8l1 0"></path>
+              <path d="M14 12l1 0"></path>
+              <path d="M14 16l1 0"></path>
+              <path d="M5 21V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16"></path>
+            </svg>
+          </div>
+          <h3>Construcción</h3>
+          <p class="category-count">642 empresas</p>
+        </a>
+
+        <!-- Category 4: Marketing -->
+        <a href="/marketing" class="card category-card">
+          <div class="icon-wrapper">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18 20V10"></path>
+              <path d="M12 20V4"></path>
+              <path d="M6 20v-6"></path>
+            </svg>
+          </div>
+          <h3>Marketing</h3>
+          <p class="category-count">923 empresas</p>
+        </a>
+
+        <!-- Category 5: Salud -->
+        <a href="/salud" class="card category-card">
+          <div class="icon-wrapper">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+            </svg>
+          </div>
+          <h3>Salud</h3>
+          <p class="category-count">567 empresas</p>
+        </a>
+
+        <!-- Category 6: Educación -->
+        <a href="/educacion" class="card category-card">
+          <div class="icon-wrapper">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+              <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+            </svg>
+          </div>
+          <h3>Educación</h3>
+          <p class="category-count">432 empresas</p>
+        </a>
+
+        <!-- Category 7: Producción -->
+        <a href="/produccion" class="card category-card">
+          <div class="icon-wrapper">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="2" y="2" width="20" height="8" rx="2"></rect>
+              <path d="M17 12v10"></path>
+              <path d="M2 17h20"></path>
+              <path d="M7 12v10"></path>
+            </svg>
+          </div>
+          <h3>Producción</h3>
+          <p class="category-count">389 empresas</p>
+        </a>
+
+        <!-- Category 8: Comercio -->
+        <a href="/comercio" class="card category-card">
+          <div class="icon-wrapper">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="9" cy="21" r="1"></circle>
+              <circle cx="20" cy="21" r="1"></circle>
+              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+            </svg>
+          </div>
+          <h3>Comercio</h3>
+          <p class="category-count">756 empresas</p>
+        </a>
+      </div>
+
+      <div class="text-center mt-4">
+        <a href="/categorias" class="btn btn-secondary">Ver todas las categorías</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED COMPANIES SECTION -->
+  <section class="section" style="background: var(--color-gray-100);">
+    <div class="container">
+      <div class="section-title">
+        <h2>Empresas Destacadas</h2>
+        <p>Las empresas más valoradas de la semana</p>
+      </div>
+
+      <div class="companies-list">
+        <!-- Company 1 -->
+        <div class="card company-card">
+          <!-- Imagen -->
+          <div class="company-image">
+            <div class="company-image-placeholder">
+              <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="var(--color-gray-400)" stroke-width="1.5">
+                <rect x="3" y="3" width="18" height="18" rx="2"></rect>
+                <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                <path d="M21 15l-5-5L5 21"></path>
+              </svg>
+            </div>
+          </div>
+
+          <!-- Header -->
+          <div class="company-header">
+            <div class="company-title-section">
+              <div class="company-rating">
+                ⭐ 4.9 <span style="color: var(--color-gray-600);">(127)</span>
+              </div>
+              <div class="company-info">
+                <h3>Agencia Digital Innovadora</h3>
+              </div>
+              <p class="company-meta">Marketing Digital | CDMX</p>
+            </div>
+          </div>
+
+          <!-- Body -->
+          <div class="company-body">
+            <p class="company-description">
+              Especialistas en marketing digital para empresas tech. Más de 10 años de experiencia
+              creando estrategias que generan resultados reales y medibles.
+            </p>
+            <div class="company-tags">
+              <span class="company-tag">SEO</span>
+              <span class="company-tag">SEM</span>
+              <span class="company-tag">Social Media</span>
+              <span class="badge badge-premium">Premium</span>
+            </div>
+          </div>
+
+          <!-- Footer -->
+          <div class="company-footer">
+            <div class="company-contact">
+              <div class="company-contact-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span>Ciudad de México</span>
+              </div>
+              <div class="company-contact-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+                <span>55-1234-5678</span>
+              </div>
+              <div class="company-contact-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="2" y1="12" x2="22" y2="12"></line>
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                </svg>
+                <span>agenciadigital.com</span>
+              </div>
+            </div>
+            <div class="company-actions">
+              <a href="/empresa/agencia-digital-innovadora" class="btn btn-primary">Ver Perfil</a>
+              <a href="#contactar" class="btn btn-secondary">Contactar</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Company 2 -->
+        <div class="card company-card">
+          <!-- Imagen -->
+          <div class="company-image">
+            <div class="company-image-placeholder">
+              <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="var(--color-gray-400)" stroke-width="1.5">
+                <rect x="2" y="3" width="20" height="14" rx="2"></rect>
+                <path d="M7 3v4"></path>
+                <path d="M17 3v4"></path>
+                <path d="M2 9h20"></path>
+              </svg>
+            </div>
+          </div>
+
+          <!-- Header -->
+          <div class="company-header">
+            <div class="company-title-section">
+              <div class="company-rating">
+                ⭐ 4.8 <span style="color: var(--color-gray-600);">(89)</span>
+              </div>
+              <div class="company-info">
+                <h3>Fotógrafo Profesional GDL</h3>
+              </div>
+              <p class="company-meta">Fotografía de Bodas | Jalisco</p>
+            </div>
+          </div>
+
+          <!-- Body -->
+          <div class="company-body">
+            <p class="company-description">
+              Capturamos los mejores momentos de tu boda con estilo artístico y profesional.
+              Paquetes personalizados que se adaptan a tu presupuesto.
+            </p>
+            <div class="company-tags">
+              <span class="company-tag">Bodas</span>
+              <span class="company-tag">XV Años</span>
+              <span class="company-tag">Eventos</span>
+            </div>
+          </div>
+
+          <!-- Footer -->
+          <div class="company-footer">
+            <div class="company-contact">
+              <div class="company-contact-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span>Guadalajara, Jalisco</span>
+              </div>
+              <div class="company-contact-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+                <span>33-9876-5432</span>
+              </div>
+              <div class="company-contact-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="2" y1="12" x2="22" y2="12"></line>
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                </svg>
+                <span>fotografogdl.com</span>
+              </div>
+            </div>
+            <div class="company-actions">
+              <a href="/empresa/fotografo-profesional-gdl" class="btn btn-primary">Ver Perfil</a>
+              <a href="#contactar" class="btn btn-secondary">Contactar</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Company 3 -->
+        <div class="card company-card">
+          <!-- Imagen -->
+          <div class="company-image">
+            <div class="company-image-placeholder">
+              <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="var(--color-gray-400)" stroke-width="1.5">
+                <path d="M3 21h18"></path>
+                <path d="M5 21V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16"></path>
+                <path d="M9 8h6"></path>
+                <path d="M9 12h6"></path>
+                <path d="M9 16h6"></path>
+              </svg>
+            </div>
+          </div>
+
+          <!-- Header -->
+          <div class="company-header">
+            <div class="company-title-section">
+              <div class="company-rating">
+                ⭐ 4.7 <span style="color: var(--color-gray-600);">(156)</span>
+              </div>
+              <div class="company-info">
+                <h3>Constructora Arquitectos MTY</h3>
+              </div>
+              <p class="company-meta">Construcción | Nuevo León</p>
+            </div>
+          </div>
+
+          <!-- Body -->
+          <div class="company-body">
+            <p class="company-description">
+              Proyectos residenciales y comerciales de alta calidad. 20 años construyendo
+              los sueños de nuestros clientes en el área metropolitana de Monterrey.
+            </p>
+            <div class="company-tags">
+              <span class="company-tag">Residencial</span>
+              <span class="company-tag">Comercial</span>
+              <span class="company-tag">Arquitectura</span>
+              <span class="badge badge-premium">Premium</span>
+            </div>
+          </div>
+
+          <!-- Footer -->
+          <div class="company-footer">
+            <div class="company-contact">
+              <div class="company-contact-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span>Monterrey, Nuevo León</span>
+              </div>
+              <div class="company-contact-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+                <span>81-8888-9999</span>
+              </div>
+              <div class="company-contact-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="2" y1="12" x2="22" y2="12"></line>
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                </svg>
+                <span>constructoramty.com</span>
+              </div>
+            </div>
+            <div class="company-actions">
+              <a href="/empresa/constructora-mty" class="btn btn-primary">Ver Perfil</a>
+              <a href="#contactar" class="btn btn-secondary">Contactar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-4">
+        <a href="/empresas-destacadas" class="btn btn-secondary">Ver más empresas destacadas</a>
+      </div>
+    </div>
+  </section>
+
+<!-- BLOG SECTION -->
+  <section class="section" id="blog">
+    <div class="container">
+      <div class="section-title">
+        <h2>Últimos Artículos</h2>
+        <p>Consejos y guías para empresarios y emprendedores</p>
+      </div>
+
+      <div class="blog-grid">
+        <!-- Blog Post 1 -->
+        <a href="/blog/como-elegir-agencia-marketing" class="card blog-card">
+          <div class="blog-image" style="display: flex; align-items: center; justify-content: center; background: var(--color-gray-200);">
+            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="var(--color-gray-500)" stroke-width="1.5">
+              <path d="M18 20V10"></path>
+              <path d="M12 20V4"></path>
+              <path d="M6 20v-6"></path>
+            </svg>
+          </div>
+          <div class="blog-content">
+            <h3>Cómo elegir una agencia de marketing digital</h3>
+            <p class="blog-meta">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: inline; vertical-align: middle; margin-right: 4px;">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+              5 min lectura
+            </p>
+          </div>
+        </a>
+
+        <!-- Blog Post 2 -->
+        <a href="/blog/tendencias-eventos-2025" class="card blog-card">
+          <div class="blog-image" style="display: flex; align-items: center; justify-content: center; background: var(--color-gray-200);">
+            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="var(--color-gray-500)" stroke-width="1.5">
+              <rect x="3" y="6" width="18" height="15" rx="2"></rect>
+              <path d="M3 10h18"></path>
+              <path d="M8 3v4"></path>
+              <path d="M16 3v4"></path>
+            </svg>
+          </div>
+          <div class="blog-content">
+            <h3>Tendencias en eventos corporativos 2025</h3>
+            <p class="blog-meta">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: inline; vertical-align: middle; margin-right: 4px;">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+              7 min lectura
+            </p>
+          </div>
+        </a>
+
+        <!-- Blog Post 3 -->
+        <a href="/blog/marketing-local-guia" class="card blog-card">
+          <div class="blog-image" style="display: flex; align-items: center; justify-content: center; background: var(--color-gray-200);">
+            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="var(--color-gray-500)" stroke-width="1.5">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+          </div>
+          <div class="blog-content">
+            <h3>Marketing local: Guía completa para PyMEs</h3>
+            <p class="blog-meta">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: inline; vertical-align: middle; margin-right: 4px;">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+              10 min lectura
+            </p>
+          </div>
+        </a>
+      </div>
+
+      <div class="text-center mt-4">
+        <a href="/blog" class="btn btn-secondary">Ver todos los artículos</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS SECTION -->
+  <section class="section stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div>
+          <div class="stat-number">5,000+</div>
+          <div class="stat-label">Empresas Registradas</div>
+        </div>
+        <div>
+          <div class="stat-number">15,000+</div>
+          <div class="stat-label">Reseñas Verificadas</div>
+        </div>
+        <div>
+          <div class="stat-number">50,000+</div>
+          <div class="stat-label">Usuarios Mensuales</div>
+        </div>
+        <div>
+          <div class="stat-number">4.7⭐</div>
+          <div class="stat-label">Valoración Promedio</div>
+        </div>
+      </div>
+
+      <p class="stats-quote">
+        "La plataforma más completa para encontrar empresas confiables en todo México"
+      </p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <!-- Column 1 - About -->
+        <div class="footer-section">
+          <h4>EmpresasMX</h4>
+          <p>
+            Directorio Nacional de Empresas Mexicanas. Conectando negocios con clientes
+            desde 2025.
+          </p>
+          <p>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: inline; vertical-align: middle; margin-right: 4px;">
+              <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+            </svg>
+            contacto@empresasmx.com<br>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: inline; vertical-align: middle; margin-right: 4px;">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+            55-1234-5678
+          </p>
+          <div class="social-links">
+            <a href="#facebook" class="social-link" aria-label="Facebook">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+            </a>
+            <a href="#instagram" class="social-link" aria-label="Instagram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="#twitter" class="social-link" aria-label="Twitter">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+              </svg>
+            </a>
+            <a href="#linkedin" class="social-link" aria-label="LinkedIn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Column 2 - Categories -->
+        <div class="footer-section">
+          <h4>Categorías</h4>
+          <ul class="footer-links">
+            <li><a href="eventos.html">Eventos</a></li>
+            <li><a href="/tecnologia">Tecnología</a></li>
+            <li><a href="/construccion">Construcción</a></li>
+            <li><a href="/marketing">Marketing</a></li>
+            <li><a href="/salud">Salud</a></li>
+            <li><a href="/categorias">Ver todas</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3 - States -->
+        <div class="footer-section">
+          <h4>Por Estado</h4>
+          <ul class="footer-links">
+            <li><a href="/empresas/cdmx">Ciudad de México</a></li>
+            <li><a href="/empresas/jalisco">Jalisco</a></li>
+            <li><a href="/empresas/nuevo-leon">Nuevo León</a></li>
+            <li><a href="/empresas/puebla">Puebla</a></li>
+            <li><a href="/estados">Ver todos</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4 - For Companies -->
+        <div class="footer-section">
+          <h4>Para Empresas</h4>
+          <ul class="footer-links">
+            <li><a href="/registro-empresa">Registrar Empresa</a></li>
+            <li><a href="/planes">Planes y Precios</a></li>
+            <li><a href="/casos-exito">Casos de Éxito</a></li>
+            <li><a href="/ayuda-empresas">Ayuda</a></li>
+            <li><a href="/faq">Preguntas Frecuentes</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 5 - Resources -->
+        <div class="footer-section">
+          <h4>Recursos</h4>
+          <ul class="footer-links">
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/guias">Guías</a></li>
+            <li><a href="/acerca-de">Acerca de</a></li>
+            <li><a href="/contacto">Contacto</a></li>
+            <li><a href="/terminos">Términos y Condiciones</a></li>
+            <li><a href="/privacidad">Política de Privacidad</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 EmpresasMX.com - Todos los derechos reservados</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/app.js"></script>
+
+</body>
+
+</html>
